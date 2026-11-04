@@ -19,6 +19,10 @@ pyautogui.write('https://www.cricbuzz.com/live-cricket-scorecard/161245/nz-vs-in
 pyautogui.press('enter')
 pyautogui.sleep(5)
 
+screenshot_path = r"C:\GenAI Course\desktopautomation\cricbuzz_screenshot.png"
+pyautogui.screenshot(screenshot_path)
+print(f"Screenshot successfully saved to: {screenshot_path}")
+
 pyautogui.hotkey("ctrl", "shift", "i")
 time.sleep(2)
 
